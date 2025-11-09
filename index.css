@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 27rem;
+    padding: clamp(0.25rem, -20.75rem + 56vw, 2rem);
+    gap: 3rem;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.first-tab, .third-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    min-width: 0;
+}
+.first-tab {
+    border-top: 4px solid aqua;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0.05rem 0.05rem 0.5rem;
+}
+.third-tab {
+    border-top: 4px solid blue;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0.05rem 0.05rem 0.5rem;
+}
+#red-border {
+    border-top: 4px solid red;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+#yellow-border {
+    border-top: 4px solid yellow;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.second-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.first-second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0.05rem 0.05rem 0.5rem;
+}
+img {
+    align-self: flex-end;
+}
+.first h1 {
+    font-size: clamp(0.75rem, 0.25rem + 8vw, 2rem);
+}
+@media only screen and (min-width:37.5rem) {
+    .container {
+        max-width: 70rem;
+        justify-content: center;
+    }
+    .second {
+        flex-direction: row;
+        width: 100%;
+        gap: clamp(0.5rem, -17.5rem + 48vw, 2rem);
+    }
+    .first-tab, .second-tab, .third-tab {
+        width: 33.33%;
+    }
+
+
+}
